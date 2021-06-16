@@ -1,0 +1,351 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>동읍나들이</title>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
+  <link rel="stylesheet" href="./slider.css">
+	<style>
+  @font-face{ font-family:나눔바른펜;
+    src:url("NanumBarunpenR.ttf") format("truetype");
+    font-style:nomal;
+    font-weight: nomal;
+  }
+  @font-face{ font-family:나눔바른펜;
+    src:url("NanumBarunpenB.ttf") format("truetype");
+    font-style:nomal;
+    font-weight: bold;
+  }
+
+
+body{
+text-align: center;
+font-size: 2rem;
+}
+
+		.logo {
+
+
+width: 100%;
+			margin: 0 auto;
+    margin-top: 20%;
+
+		}
+
+		.button {
+			width: 50%;
+			margin: 0 auto;
+
+		}
+
+		big {
+
+			font-family: mapo한아름;
+			font-size: 4rem;
+
+		}
+
+		small {
+
+			margin: 0 auto;
+
+
+		}
+
+span {
+	font-size: 1.7rem;
+	margin: 0 auto;
+text-align: center;
+	font-family: 나눔바른펜;
+
+}
+
+p {
+	font-size: 2.2rem;
+	margin: 0 auto;
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: center;
+	font-family: 나눔바른펜;
+}
+
+.content {
+  font-size: 2.7rem;
+  margin: 0 auto;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  font-family: 나눔바른펜;
+  z-index: 2;
+
+}
+
+
+
+.section {
+ background-color: #f5f9ee;
+width: 100%;
+z-index: 2;
+font-family: 나눔바른펜;
+font-size: 2.7rem;
+
+
+}
+
+
+
+b {
+  font-family: 나눔바른펜;
+  font-size: 3rem;
+
+}
+
+
+
+
+nav {
+    overflow: hidden;
+    position: fixed;
+    transform: translateX(-300px);
+    height: 100%;
+    width: 600px;
+	top: 0px;
+
+    transition: all 800ms cubic-bezier(.8, 0, .33, 1);
+    border-radius: 0% 0% 100% 50%;
+	z-index: 2;
+}
+
+nav.nav-open {
+    transform: translateX(0px);
+    border-radius: 0% 0% 0% 0%;
+	 background: #93a468;
+}
+
+nav .menu-btn {
+    position: absolute;
+   top: 5%;
+    right: 30%;
+    padding: 0;
+    width: 50px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+nav .menu-btn .line {
+    padding: 0;
+    width: 30px;
+    background: #041418;
+    height: 6px;
+    margin: 5px 0;
+    transition: all 700ms cubic-bezier(.9, 0, .33, 1);
+}
+
+nav .menu-btn .line.line--1 {
+    width: 50px;
+    transform: rotate(0) translateY(0);
+}
+
+nav .menu-btn .line.line--1.line-cross {
+    width: 30px;
+    transform: rotate(45deg) translateY(0px);
+	 background:  #93a468;;
+}
+
+nav .menu-btn .line.line--2 {
+    width: 40px;
+    transform: translateX(0);
+}
+
+nav .menu-btn .line.line--2.line-fade-out {
+    width: 28px;
+    transform: translate(30px);
+    opacity: 0;
+}
+
+nav .menu-btn .line.line--3 {
+    width: 30px;
+    transform: rotate(0) translateY(0);
+}
+
+nav .menu-btn .line.line--3.line-cross {
+    width: 30px;
+    transform: rotate(-45deg) translateY(-15px);
+	 background:  #93a468;
+}
+
+nav .nav-links {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 900ms cubic-bezier(.9, 0, .33, 1);
+}
+
+nav .nav-links.fade-in {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+nav .nav-links .link {
+    margin: 20px 0;
+    text-decoration: none;
+    font-family: Algerian;
+    color: lightyellow;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    transition: all 300ms cubic-bezier(.9, 0, .33, 1);
+}
+
+nav .nav-links .link:hover {
+    color: #f5f9ee;
+}
+
+
+
+
+
+
+
+
+.back {
+  position: fixed;
+  top: 0;
+  background-color: #d6e8bc;
+  width: 100%;
+  height: 9%;
+  text-align: center;
+  z-index: 1;
+  font-size: 3.5rem;
+  font-family: 나눔바른펜;
+  font-weight: bold;
+}
+
+
+
+@media (max-width: 640px){
+}
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+
+
+	<div class="logo"> <img src="images/tree3.jpg" alt="" width="100%"> </div>
+
+
+
+
+
+
+      <nav>
+      	<div class="menu-btn">
+      		<div class="line line--1"></div>
+      		<div class="line line--2"></div>
+      		<div class="line line--3"></div>
+      	</div>
+
+      	<div class="nav-links">
+                              <p><big</big> </p>
+
+      		<a href="index.html" class="link">홈</a>
+      		<a href="tree.html" class="link"><u>신방리 음나무군</u></a>
+      		<a href="dahori.html" class="link">다호리 고분군 마을</a>
+          <a href="junam.html" class="link">주남저수지</a>
+          <a href="dangam.html" class="link">창원 단감 테마공원</a>
+          <a href="juckdong.html" class="link">죽동마을 메타세콰이어길</a>
+      	</div>
+      </nav>
+
+
+<div class="back">
+  <br />
+  동읍 나들이
+</div>
+
+
+
+
+<div class="section">
+	<br /> 	<br />
+
+		<big>신방리음나무군<br />
+ &#149; &#149; &#149;  &#149;</big>
+
+		<br />
+	<div class="content">	음나무는 약 370살 정도 됐어요 <br /> <br />
+
+		천연기념물 제164호로 등록됐어요  <br />  <br />마을의 수호신 역할을 하고 있어 <br /> <br /> 매년 제사도 지내고 있어요
+
+</div>
+<br /><br />
+
+</div>
+
+<br /><br />
+
+<div class="content">
+<b>나들이 팁<br />
+&#149; &#149; &#149;  &#149;</b>
+<br />
+
+
+	동읍 방향 교통표지판에 <br />음나무가 기재돼 있어요<br /><br />
+
+  초등학교 뒤에 있어서 <br /> 찾아오기 쉬워요<br /><br />
+  길 건너 공터에 <br />주차할 수 있어요
+
+
+<br />
+</div>
+
+
+
+
+<br />	<br />
+</div>
+
+<div class="section">
+	<br />
+
+		<b>주소<br />
+ &#149; &#149; &#149;  &#149;</b>
+
+		<br />
+	<div class="content">
+    경상남도 창원시 의창구 동읍 	<br />신방리 652
+
+</div>
+<br />
+
+
+
+
+
+
+
+
+  <script  src="./script.js">
+
+
+  </script>
+
+</body>
+</html>
